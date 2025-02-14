@@ -1,0 +1,163 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(0, 145, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search {
+    border: 0;
+    width: 250px;
+}
+
+.search-underline {
+    width: 300px;
+    border: 0;
+    height: 2px;
+    background: #000;
+}
+
+.menu {
+    display: flex;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+
+.underline{
+    width: 2000px;
+}
+
+.pr-box {
+    width: 900px;
+    height: 400px;
+    margin-top: 80px;
+    margin-left: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pr-left {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.pr-img {
+    width: 100%;
+    height: 100%;
+}
+
+.pr-right {
+    width: 50%;
+    height: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-left {
+    border: 2px solid rgb(0, 145, 125);
+    color: rgb(0, 145, 125);
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+}
+
+.btn-right {
+    border: 2px solid rgb(0, 145, 125);
+    background-color: rgb(0, 145, 125);
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    flex-direction: column;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.name {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.addres {
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.size {
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.ex-box{
+    width: 900px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    margin-bottom: 50px;
+}
+
+.ex{
+    width: calc(100%/4);
+    text-align: center;
+    background-color: #dcdcdc;
+    border-bottom: 2px solid rgb(0, 145, 125);
+}
+
+.hover{
+    background-color: white;
+    border: 2px solid rgb(0, 145, 125);
+    border-bottom: none;
+}
+

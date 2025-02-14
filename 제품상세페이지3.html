@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 제품상세페이지3 </title>
+    <link rel="stylesheet" href="./resources/css/page.CSS">
+
+    <style>
+        .map-top {
+            margin-left: 400px;
+        }
+
+        .map-bottom {
+            position: absolute;
+            top: 65%;
+            left: 46%;
+        }
+
+        .name2 {
+            color: rgb(0, 145, 125);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .addres {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <div class="navigation">
+                <a href="index.html" class="title"> 축구메트로 </a>
+                <div class="search-box">
+                    <input class="search" type="text" placeholder="현재 1+1 이벤트중!!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                    <hr class="search-underline">
+                </div>
+
+                <div class="menu">
+                    <a class="ivent" href="이벤트페이지.html"> 이벤트 </a>
+                    <a class="pr-inventory" href="제품목록.html"> 제품목록 </a>
+                    <a class="login" href="로그인페이지.html"> 로그인 </a>
+                </div>
+            </div>
+            <hr class="underline">
+        </nav>
+
+        <div class="pr-box">
+            <div class="pr-left">
+                <img class="pr-img"
+                    src="https://performans.add4s.co.kr/prodirectsoccerus/380000652/380000652_297_z1.jpg" alt="">
+            </div>
+
+            <div class="pr-right">
+                <p class="brand"> 아디다스 </p>
+                <p class="name"> 스피드포탈+ FG (핑크/화이트/코어블랙) </p>
+                <span class="price"> 271,300원 </span>
+                <p class="addres"> 배송정보 <br> 배송비 300원 </br> </p>
+
+                <p class="size"> 사이즈 선택 </p>
+                <select name="" id="">
+                    <option value=""> 240 </option>
+                    <option value=""> 245 </option>
+                    <option value=""> 250 </option>
+                    <option value=""> 255 </option>
+                    <option value=""> 260 </option>
+                    <option value=""> 265 </option>
+                    <option value=""> 270 </option>
+                    <option value=""> 275 </option>
+                    <option value=""> 280 </option>
+                    <option value=""> 285 </option>
+                </select>
+                <div class="btn">
+                    <div class="btn-left">
+                        <p> 장바구니 </p>
+                    </div>
+                    <div class="btn-right">
+                        <p> 바로구매 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ex-box">
+            <div class="ex hover">
+                <p class="ex-text"> 상품설명 </p>
+            </div>
+            <div class="ex">
+                <p class="ex-text">구매정보 </p>
+            </div>
+            <div class="ex">
+                <p class="ex-text"> 리뷰 </p>
+            </div>
+            <div class="ex">
+                <p class="ex-text"> Q&A </p>
+            </div>
+        </div>
+
+        <hr class="underline">
+
+        <div class="map-top">
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1739347535664" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+            <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script"
+                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp": "1739347535664",
+                    "key": "2nzxr",
+                    "mapWidth": "450",
+                    "mapHeight": "300"
+                }).render();
+            </script>
+        </div>
+
+        <div class="map-bottom">
+            <p class="name2"> 싸카스포츠 대전점 </p>
+            <p class="addres2"> 대전광역시 중구 용두동 14-9 </p>
+            <p class="addres2"> 전화번호: 042-253-7701 </p>
+        </div>
+    </div>
+</body>
+
+</html>

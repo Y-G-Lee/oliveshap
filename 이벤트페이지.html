@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 이벤트 페이지 </title>
+
+    <link rel="stylesheet" href=".//resources/css/page.CSS">
+
+    <style>
+        .ivent-page {
+            margin-top: 80px;
+            background-color: rgb(0, 145, 125);
+            width: 700px;
+            height: 900px;
+            margin-left: 500px;
+        }
+
+        .text-box {
+            padding: 30px;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .sin {
+            width: 350px;
+            height: 155px;
+            box-sizing: border-box;
+            margin-left: 180px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .sin-img {
+            width: 100%;
+        }
+
+        .text2 {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .galaxy-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .air-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .map-top {
+            margin-left: 500px;
+        }
+
+        .map-bottom {
+            position: absolute;
+            top: 120%;
+            left: 54%;
+        }
+
+        .name2 {
+            color: rgb(0, 145, 125);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .addres {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <div class="navigation">
+                <a href="index.html" class="title"> 축구메트로 </a>
+                <div class="search-box">
+                    <input class="search" type="text" placeholder="현재 1+1 이벤트중!!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                    <hr class="search-underline">
+                </div>
+
+                <div class="menu">
+                    <a class="ivent" href="이벤트페이지.html"> 이벤트 </a>
+                    <a class="pr-inventory" href="제품목록.html"> 제품목록 </a>
+                    <a class="login" href="로그인페이지.html"> 로그인 </a>
+                </div>
+            </div>
+            <hr class="underline">
+        </nav>
+
+        <div class="ivent-page">
+            <div class="text-box">
+                <h1 class="text"> 봄 맞이 이벤트 </h1>
+            </div>
+
+            <div class="sin">
+                <img class="sin-img" src="https://applebag.co.kr/shop/editor_upload_admin/1480920506-tk_money_03.jpg"
+                    alt="">
+                <p class="text2"> 신세계상품권 5만원(1명) </p>
+            </div>
+
+            <div class="sin">
+                <img class="galaxy-img"
+                    src="https://cdnweb01.wikitree.co.kr/webdata/editor/202406/28/img_20240628150530_2159d710.webp"
+                    alt="">
+                <p class="text2"> 갤럭시S25울트라 (1명) </p>
+            </div>
+
+            <div class="sin">
+                <img class="air-img"
+                    src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-pro-2-hero-select-202409_FMT_WHH?wid=750&hei=556&fmt=jpeg&qlt=90&.v=1724041668836"
+                    alt="">
+                <p class="text2"> 신세계상품권 5만원(1명) </p>
+            </div>
+        </div>
+
+        <hr class="underline">
+
+        <div class="map-top">
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1739347535664" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+            <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script"
+                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp": "1739347535664",
+                    "key": "2nzxr",
+                    "mapWidth": "500",
+                    "mapHeight": "360"
+                }).render();
+            </script>
+        </div>
+
+        <div class="map-bottom">
+            <p class="name2"> 싸카스포츠 대전점 </p>
+            <p class="addres"> 대전광역시 중구 용두동 14-9 </p>
+            <p class="addres"> 전화번호: 042-253-7701 </p>
+        </div>
+    </div>
+</body>
+
+</html>

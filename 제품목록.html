@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 제품 목록 </title>
+
+    <link rel="stylesheet" href="./resources/css/page.CSS">
+
+    <style>
+        .top-text {
+            margin-top: 60px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .top-text2 {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin-left: 82%;
+        }
+
+        .card-box {
+            width: 1000px;
+            height: 1600px;
+            margin-left: 400px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: calc(100% / 4);
+            height: calc(100% / 5);
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0px 0px 4px 0px #dcdcdc;
+            cursor: pointer;
+        }
+
+        .top {
+            height: 70%;
+            overflow: hidden;
+        }
+
+        .pr-img {
+            width: 100%;
+        }
+
+        .pr-img:hover {
+            transform: scale(120%);
+            cursor: pointer;
+        }
+
+        .bottom {
+            height: 30%;
+        }
+
+        .bottom:hover {
+            text-decoration: underline;
+        }
+
+        .brand {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .price2 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .number-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .number {
+            width: 19px;
+            height: 19px;
+            border: 2px solid black;
+            background-color: white;
+        }
+
+        .number-text {
+            font-size: 16px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .bg-color {
+            background-color: rgb(0, 145, 125);
+        }
+
+        .next {
+            display: flex;
+            align-items: center;
+            border: 2px solid black;
+            background-color: #dcdcdc;
+        }
+
+        .map-top {
+            margin-left: 400px;
+        }
+
+        .map-bottom {
+            position: absolute;
+            top: 195%;
+            left: 46%;
+        }
+
+        .name2 {
+            color: rgb(0, 145, 125);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .addres {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <div class="navigation">
+                <a href="index.html" class="title"> 축구메트로 </a>
+                <div class="search-box">
+                    <input class="search" type="text" placeholder="현재 1+1 이벤트중!!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                    <hr class="search-underline">
+                </div>
+
+                <div class="menu">
+                    <a class="ivent" href="이벤트페이지.html"> 이벤트 </a>
+                    <a class="pr-inventory" href=""> 제품목록 </a>
+                    <a class="login" href="로그인페이지.html"> 로그인 </a>
+                </div>
+            </div>
+            <hr class="underline">
+        </nav>
+
+        <div class="top-text">
+            <a href=""> 추천순 </a>
+            <a href=""> 가격순 </a>
+            <a href=""> 리뷰순 </a>
+
+            <div class="top-text2">
+                <select name="" id="">
+                    <option value=""> 20개 </option>
+                    <option value=""> 40개 </option>
+                    <option value=""> 60개 </option>
+                    <option value=""> 80개 </option>
+                </select>
+                <p> 씩 보기 </p>
+            </div>
+        </div>
+
+        <div class="card-box">
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지.html">
+                        <img class="pr-img"
+                            src="https://www.redsoccer.co.kr/shopimages/clickplz/018001003567.jpg?1675929557" alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 엑스 스피드포탈.1 FG </p>
+                    <span class="price2"> 188,900원 </span>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지2.html">
+                        <img class="pr-img"
+                            src="https://image-cdn.trenbe.com/product-images/1667443564015_f3e91602b0bc96964270b19eea6acd53_0.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 나이키 </p>
+                    <p class="name"> 머큐리얼 슈퍼플라이 8 아카데미 HG </p>
+                    <span class="price2"> 269,000원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지3.html">
+                        <img class="pr-img"
+                            src="https://performans.add4s.co.kr/prodirectsoccerus/380000652/380000652_297_z1.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 스피드포탈+FG(핑크/화이트/코어블랙) </p>
+                    <span class="price2"> 271,300원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지.html">
+                        <img class="pr-img"
+                            src="https://www.redsoccer.co.kr/shopimages/clickplz/018001003567.jpg?1675929557" alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 엑스 스피드포탈.1 FG </p>
+                    <span class="price2"> 188,900원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지2.html">
+                        <img class="pr-img"
+                            src="https://image-cdn.trenbe.com/product-images/1667443564015_f3e91602b0bc96964270b19eea6acd53_0.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 나이키 </p>
+                    <p class="name"> 머큐리얼 슈퍼플라이 8 아카데미 HG </p>
+                    <span class="price2"> 269,000원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지3.html">
+                        <img class="pr-img"
+                            src="https://performans.add4s.co.kr/prodirectsoccerus/380000652/380000652_297_z1.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 스피드포탈+FG(핑크/화이트/코어블랙) </p>
+                    <span class="price2"> 271,300원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지.html">
+                        <img class="pr-img"
+                            src="https://www.redsoccer.co.kr/shopimages/clickplz/018001003567.jpg?1675929557" alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 엑스 스피드포탈.1 FG </p>
+                    <span class="price2"> 188,900원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지2.html">
+                        <img class="pr-img"
+                            src="https://image-cdn.trenbe.com/product-images/1667443564015_f3e91602b0bc96964270b19eea6acd53_0.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 나이키 </p>
+                    <p class="name"> 머큐리얼 슈퍼플라이 8 아카데미 HG </p>
+                    <span class="price2"> 269,000원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지3.html">
+                        <img class="pr-img"
+                            src="https://performans.add4s.co.kr/prodirectsoccerus/380000652/380000652_297_z1.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 스피드포탈+FG(핑크/화이트/코어블랙) </p>
+                    <span class="price2"> 271,300원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지.html">
+                        <img class="pr-img"
+                            src="https://www.redsoccer.co.kr/shopimages/clickplz/018001003567.jpg?1675929557" alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 엑스 스피드포탈.1 FG </p>
+                    <span class="price2"> 188,900원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지2.html">
+                        <img class="pr-img"
+                            src="https://image-cdn.trenbe.com/product-images/1667443564015_f3e91602b0bc96964270b19eea6acd53_0.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 나이키 </p>
+                    <p class="name"> 머큐리얼 슈퍼플라이 8 아카데미 HG </p>
+                    <span class="price2"> 269,000원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지3.html">
+                        <img class="pr-img"
+                            src="https://performans.add4s.co.kr/prodirectsoccerus/380000652/380000652_297_z1.jpg"
+                            alt="">
+                    </a>
+
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 스피드포탈+FG(핑크/화이트/코어블랙) </p>
+                    <span class="price2"> 271,300원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지.html">
+                        <img class="pr-img"
+                            src="https://www.redsoccer.co.kr/shopimages/clickplz/018001003567.jpg?1675929557" alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 엑스 스피드포탈.1 FG </p>
+                    <span class="price2"> 188,900원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지2.html">
+                        <img class="pr-img"
+                            src="https://image-cdn.trenbe.com/product-images/1667443564015_f3e91602b0bc96964270b19eea6acd53_0.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 나이키 </p>
+                    <p class="name"> 머큐리얼 슈퍼플라이 8 아카데미 HG </p>
+                    <span class="price2"> 269,000원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지3.html">
+                        <img class="pr-img"
+                            src="https://performans.add4s.co.kr/prodirectsoccerus/380000652/380000652_297_z1.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 스피드포탈+FG(핑크/화이트/코어블랙) </p>
+                    <span class="price2"> 271,300원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지.html">
+                        <img class="pr-img"
+                            src="https://www.redsoccer.co.kr/shopimages/clickplz/018001003567.jpg?1675929557" alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 엑스 스피드포탈.1 FG </p>
+                    <span class="price2"> 188,900원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지2.html">
+                        <img class="pr-img"
+                            src="https://image-cdn.trenbe.com/product-images/1667443564015_f3e91602b0bc96964270b19eea6acd53_0.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 나이키 </p>
+                    <p class="name"> 머큐리얼 슈퍼플라이 8 아카데미 HG </p>
+                    <span class="price2"> 269,000원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지3.html">
+                        <img class="pr-img"
+                            src="https://performans.add4s.co.kr/prodirectsoccerus/380000652/380000652_297_z1.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 스피드포탈+FG(핑크/화이트/코어블랙) </p>
+                    <span class="price2"> 271,300원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지.html">
+                        <img class="pr-img"
+                            src="https://www.redsoccer.co.kr/shopimages/clickplz/018001003567.jpg?1675929557" alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 아디다스 </p>
+                    <p class="name"> 엑스 스피드포탈.1 FG </p>
+                    <span class="price2"> 188,900원 </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <a target="_blank" href="제품상세페이지2.html">
+                        <img class="pr-img"
+                            src="https://image-cdn.trenbe.com/product-images/1667443564015_f3e91602b0bc96964270b19eea6acd53_0.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p class="brand"> 나이키 </p>
+                    <p class="name"> 머큐리얼 슈퍼플라이 8 아카데미 HG </p>
+                    <span class="price2"> 269,000원 </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="number-box">
+            <div class="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+            </div>
+            <div class="number">
+                <p class="number-text bg-color"> 1 </p>
+            </div>
+            <div class="number">
+                <p class="number-text"> 2 </p>
+            </div>
+            <div class="number">
+                <p class="number-text"> 3 </p>
+            </div>
+            <div class="number">
+                <p class="number-text"> 4 </p>
+            </div>
+            <div class="number">
+                <p class="number-text"> 5 </p>
+            </div>
+            <div class="number">
+                <p class="number-text"> 6 </p>
+            </div>
+            <div class="number">
+                <p class="number-text"> 7 </p>
+            </div>
+            <div class="number">
+                <p class="number-text"> 8 </p>
+            </div>
+            <div class="number">
+                <p class="number-text"> 9 </p>
+            </div>
+            <div class="number">
+                <p class="number-text"> 10 </p>
+            </div>
+            <div class="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+            </div>
+        </div>
+
+        <hr class="underline">
+
+        <div class="map-top">
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1739347535664" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+            <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script"
+                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp": "1739347535664",
+                    "key": "2nzxr",
+                    "mapWidth": "450",
+                    "mapHeight": "300"
+                }).render();
+            </script>
+        </div>
+
+        <div class="map-bottom">
+            <p class="name2"> 싸카스포츠 대전점 </p>
+            <p class="addres2"> 대전광역시 중구 용두동 14-9 </p>
+            <p class="addres2"> 전화번호: 042-253-7701 </p>
+        </div>
+    </div>
+</body>
+
+</html>
